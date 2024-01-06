@@ -1,9 +1,6 @@
 on: [push]
 jobs:
   deploy:
-    env:
-      SANITY_STUDIO_PROJ_ID: ${{ vars.SANITY_STUDIO_PROJ_ID }}
-      SANITY_STUDIO_PROJ_TITLE: ${{ vars.SANITY_STUDIO_PROJ_TITLE }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
