@@ -6,9 +6,10 @@ import {media} from 'sanity-plugin-media'
 
 export default defineConfig({
   name: 'default',
-  title: 'greentea',
+  title: process.env.SANITY_STUDIO_PROJ_TITLE,
 
-  projectId: 'ckvf1x81',
+  // @ts-ignore
+  projectId: process.env.SANITY_STUDIO_PROJ_ID,
   dataset: 'production',
 
   plugins: [deskTool(), media(), visionTool()],

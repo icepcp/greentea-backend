@@ -7,19 +7,19 @@ export default {
       name: 'title',
       type: 'string',
       title: 'Title',
-      validation: Rule => Rule.required()
+      validation: (Rule: { required: () => any; }) => Rule.required()
     },
     {
       name: 'lefttext',
       type: 'text',
       title: 'Left Text',
-      validation: Rule => Rule.required()
+      validation: (Rule: { required: () => any; }) => Rule.required()
     },
     {
       name: 'righttext',
       type: 'text',
       title: 'Right Text',
-      validation: Rule => Rule.required()
+      validation: (Rule: { required: () => any; }) => Rule.required()
     },
     {
       title: 'Background Image',
@@ -35,7 +35,7 @@ export default {
           title: 'Alt Text',
         }
       ],
-      validation: Rule => Rule.required()
+      validation: (Rule: { required: () => any; }) => Rule.required()
     }
   ]
 }
